@@ -16,4 +16,17 @@ class MaxCostTest {
         int expectedCost = 24;
         Assertions.assertEquals(expectedCost, MaxCostCalculator.calculateMaxCost(matrix));
     }
+
+    @Test
+    void calculateMaxCostTest3() {
+        int matrix[][] = {
+                {1, 9, 8, 1},
+                {1, 2, 3, 4},
+                {3, 1, 3, 4},
+                {2, 5, -2, 6},
+                {1, 2, 3, 4}
+        };
+        int expectedCost = 22;
+        Assertions.assertEquals(expectedCost, MaxCostCalculator.calculateMaxCost(matrix));
+    }
 }
